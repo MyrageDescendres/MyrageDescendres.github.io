@@ -45,7 +45,6 @@ a {
 
 footer {
   display: flex;
-  align-items: center;
   justify-content: space-evenly;
   background-color: #292525;
   font-family: "Karla";
@@ -72,25 +71,31 @@ main {
 .monde_alternatif {
   background-color: #151E1D;
   display: grid;
-  grid-template-columns: 3fr 2fr;
-  padding: 4rem;
+  grid-template-columns: 3fr 3fr;
   flex-shrink: 2;
+  gap: 4rem;
 }
 
 .moon_img {
   min-width: 15rem;
   max-width: 25rem;
   grid-column: 2/2;
-}
-
-.moon_txt {
-  grid-column: 1/1;
-  grid-row: 1/1;
+  width: fit-content;
+  margin: 4rem;
 }
 
 .moon_h2 {
   grid-column: 1/1;
   grid-row: 1/1;
+  margin-left: 10rem;
+  margin-top: 8rem;
+}
+
+.moon_txt {
+  grid-column: 1/1;
+  grid-row: 1/1;
+  margin: 6rem;
+  padding: 4rem;
 }
 
 .vampires {
@@ -98,27 +103,29 @@ main {
   display: grid;
   grid-template-columns: 3fr 3fr;
   background-color: #190f0e;
+  column-gap: 5rem;
 }
 
 .vamp_txt {
   grid-column: 2/2;
   grid-row: 2/2;
-  margin: 3rem;
+  justify-content: center;
+  margin: 6rem;
   padding: 4rem;
 }
 
 .vamp_h2 {
   grid-column: 2/2;
   grid-row: 2/2;
-  margin: 3rem;
-  padding-top: 1rem;
-  padding-left: 4rem;
+  margin-left: 10rem;
+  margin-top: 8rem;
 }
 
 .vamp_img {
   grid-row: 2/2;
   min-width: 15rem;
   max-width: 50rem;
+  width: fit-content;
 }
 
 .agence {
@@ -126,15 +133,23 @@ main {
 }
 
 .agence_txt {
-  margin: 3rem;
-  padding: 0.1rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
+  padding-bottom: 0.4rem;
+}
+
+.agence_h2 {
+  margin-left: 6rem;
 }
 
 .agence_vamp {
   grid-column: 1/1;
   grid-row: 3/3;
-  padding: 2rem;
-  padding-bottom: 15rem;
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+  padding: 5rem;
+  padding-bottom: 8rem;
   flex-shrink: 1;
   background-color: #702424;
 }
@@ -151,7 +166,11 @@ main {
 .agence_hum {
   grid-column: 2/2;
   grid-row: 3/3;
-  padding: 2rem;
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+  padding: 5rem;
+  padding-bottom: 8rem;
   flex-shrink: 1;
   background-color: #151E1D;
 }
