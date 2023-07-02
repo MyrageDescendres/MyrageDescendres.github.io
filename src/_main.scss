@@ -1,3 +1,58 @@
 main {
-  background-color: red;
+  font-family: "raleway";
+  background-color: rgb(0, 68, 255);
+  color: $white1;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+
+//section lune
+.monde_alternatif {
+
+  background-color:$moonDark ;
+  display: grid;
+  text-align: justify;
+}
+
+.moon {
+  min-width: 15rem;
+  max-width: 25rem;
+  grid-column: 2/2;
+}
+.moon_txt {
+  grid-column: 1/1;
+}
+
+//section VAmpire
+.vampires {
+  grid-row: 2/2;
+  display: grid;
+  background-color:$vampireDark ;
+}
+
+.vamp_txt {
+  grid-row: 2/2;
+}
+
+.vamp_img {
+  grid-row: 2/2;
+}
+
+//section agence
+.agence {
+  display: grid;
+}
+//Agence côté vampire
+.agence_vamp {
+  grid-column: 1/1;
+  grid-row: 3/3;
+  background-color: $redVamp;
+}
+
+//Agence côté humain
+.agence_hum {
+  grid-column: 2/2;
+  grid-row: 3/3;
+  background-color: $moonDark;
 }

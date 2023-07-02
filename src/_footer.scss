@@ -1,9 +1,15 @@
+*, *::before, *::after {
+  box-sizing: border-box 
+}
+
 footer {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+  background-color: $dark1;;
+  font-family: "Karla";
+  color: $white1;
 }
-
 ul li {
   list-style: none;
 }
