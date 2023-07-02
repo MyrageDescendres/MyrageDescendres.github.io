@@ -1,0 +1,19 @@
+*, *::before, *::after {
+  box-sizing: border-box 
+}
+
+header {
+  background-color: red;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1.5rem;
+}
+.menu_logo {
+  margin-inline-end: auto;
+}
+ul li {
+  list-style: none;
+}
