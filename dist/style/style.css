@@ -58,6 +58,11 @@ ul li {
 
 main {
   font-family: "raleway";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: justify;
   background-color: rgb(0, 68, 255);
   color: #DAD8D8;
   display: grid;
@@ -67,10 +72,12 @@ main {
 .monde_alternatif {
   background-color: #151E1D;
   display: grid;
-  text-align: justify;
+  grid-template-columns: 3fr 2fr;
+  padding: 4rem;
+  flex-shrink: 2;
 }
 
-.moon {
+.moon_img {
   min-width: 15rem;
   max-width: 25rem;
   grid-column: 2/2;
@@ -78,36 +85,84 @@ main {
 
 .moon_txt {
   grid-column: 1/1;
+  grid-row: 1/1;
+}
+
+.moon_h2 {
+  grid-column: 1/1;
+  grid-row: 1/1;
 }
 
 .vampires {
   grid-row: 2/2;
   display: grid;
-  background-color: #190F0E;
+  grid-template-columns: 3fr 3fr;
+  background-color: #190f0e;
 }
 
 .vamp_txt {
+  grid-column: 2/2;
   grid-row: 2/2;
+  margin: 3rem;
+  padding: 4rem;
+}
+
+.vamp_h2 {
+  grid-column: 2/2;
+  grid-row: 2/2;
+  margin: 3rem;
+  padding-top: 1rem;
+  padding-left: 4rem;
 }
 
 .vamp_img {
   grid-row: 2/2;
+  min-width: 15rem;
+  max-width: 50rem;
 }
 
 .agence {
   display: grid;
 }
 
+.agence_txt {
+  margin: 3rem;
+  padding: 0.1rem;
+}
+
 .agence_vamp {
   grid-column: 1/1;
   grid-row: 3/3;
+  padding: 2rem;
+  padding-bottom: 15rem;
+  flex-shrink: 1;
   background-color: #702424;
+}
+
+.btn_nuit {
+  border: 2px solid #FEF4A9;
+  padding: 0.625rem 1.125rem;
+  border-radius: 7px;
+  background-color: #702424;
+  color: #FEF4A9;
+  cursor: pointer;
 }
 
 .agence_hum {
   grid-column: 2/2;
   grid-row: 3/3;
+  padding: 2rem;
+  flex-shrink: 1;
   background-color: #151E1D;
+}
+
+.btn_vacances {
+  padding: 0.625rem 1.125rem;
+  border-radius: 7px;
+  border: 2px solid #C16E62;
+  color: #C16E62;
+  background-color: #151E1D;
+  cursor: pointer;
 }
 
 *,
