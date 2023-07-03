@@ -8,8 +8,23 @@ footer {
   background-color: $dark1;;
   font-family: "Karla";
   color: $white1;
-  max-width: 150vw;
+  max-width: 200vw;
 }
 ul li {
   list-style: none;
+}
+
+@media (max-width: 700px) {
+  footer{ 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(2rem, 12rem));
+    gap: 1rem;
+    align-items: center;
+}
+.footer_logo{
+  width: 10rem;
+  margin-top: 1rem;
+  justify-content: center;
+  align-items: center;
+}
 }
