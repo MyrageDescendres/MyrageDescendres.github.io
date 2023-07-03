@@ -2,14 +2,17 @@
   box-sizing: border-box;
 }
 
-header {
+.menu {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: flex-end;
-  gap: 1.5rem;
-  margin-right: 2rem;
+  gap: 4rem;
   background-color: #292525;
   color: #DAD8D8;
+  padding: 1rem;
+  padding-right: 3rem;
+  margin: 0;
+  max-width: 150vw;
 }
 
 .menu_logo {
@@ -49,6 +52,7 @@ footer {
   background-color: #292525;
   font-family: "Karla";
   color: #DAD8D8;
+  max-width: 150vw;
 }
 
 ul li {
@@ -84,7 +88,7 @@ main {
   margin: 4rem;
 }
 
-.moon_h2 {
+.moon_h1 {
   grid-column: 1/1;
   grid-row: 1/1;
   margin-left: 10rem;
@@ -96,6 +100,7 @@ main {
   grid-row: 1/1;
   margin: 6rem;
   padding: 4rem;
+  max-width: 28vw;
 }
 
 .vampires {
@@ -112,6 +117,7 @@ main {
   justify-content: center;
   margin: 6rem;
   padding: 4rem;
+  max-width: 28vw;
 }
 
 .vamp_h2 {
@@ -136,6 +142,7 @@ main {
   margin-left: 6rem;
   margin-right: 6rem;
   padding-bottom: 0.4rem;
+  max-width: 25vw;
 }
 
 .agence_h2 {
@@ -156,7 +163,8 @@ main {
 
 .btn_nuit {
   border: 2px solid #FEF4A9;
-  padding: 0.625rem 1.125rem;
+  padding: 0.5rem;
+  width: 15rem;
   border-radius: 7px;
   background-color: #702424;
   color: #FEF4A9;
@@ -176,11 +184,13 @@ main {
 }
 
 .btn_vacances {
-  padding: 0.625rem 1.125rem;
-  border-radius: 7px;
   border: 2px solid #C16E62;
+  width: 15rem;
+  padding: 0.625rem;
+  border-radius: 7px;
   color: #C16E62;
   background-color: #151E1D;
+  justify-content: center;
   cursor: pointer;
 }
 
@@ -429,7 +439,7 @@ summary {
 }
 
 @media (max-width: 700px) {
-  .speaker_banner_txt {
+  header ul li {
     display: none;
   }
 }/*# sourceMappingURL=style.css.map */

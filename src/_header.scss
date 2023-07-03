@@ -2,14 +2,17 @@
   box-sizing: border-box 
 }
 
-header {
+.menu {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: flex-end;
-  gap: 1.5rem;
-  margin-right: 2rem;
+  gap: 4rem;
   background-color: $dark1;
   color: $white1;
+  padding: 1rem;
+  padding-right: 3rem;
+  margin: 0;
+  max-width: 150vw
 }
 
 .menu_logo {
