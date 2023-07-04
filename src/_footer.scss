@@ -6,12 +6,23 @@ footer {
   display: flex;
   justify-content: space-evenly;
   background-color: $dark1;;
-  font-family: "Karla";
+  font-family: 'Karla', sans-serif;
   color: $white1;
   max-width: 200vw;
+  padding-bottom: 1rem;
 }
 ul li {
   list-style: none;
+}
+footer a {
+  color: $white1;
+}
+
+.footer_logo{
+  width: 8rem;
+  margin-top: 1rem;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 700px) {

@@ -1,16 +1,19 @@
 main {
-  font-family: "raleway";
+  font-family: 'Raleway', sans-serif;
   font-size: 1.25rem;
   font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
   background-color: rgb(0, 68, 255);
   color: $white1;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
 }
 
-
+.ancre {
+  margin: 2rem;
+  
+}
 
 
 
@@ -28,10 +31,14 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-inline-end: 8rem;
 }
 
 .moon_h1 {
   font-size: 2.5rem;
+  font-family: 'Karla', sans-serif;
+  letter-spacing: 1.5px;
+  
 }
 
 .moon_txt {
@@ -64,24 +71,24 @@ main {
 
 .vamp_flex {
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: column;
 }
 .vamp_txt {
-  max-width: 28vw;
+  max-width: 40vw;
 }
 .vamp_h2 {
   font-size: 2.5rem;
+  font-family: 'Karla', sans-serif;
+  letter-spacing: 0.01px;
 }
 
 .vamp_img {
   display: flex;
-  margin-inline-end: auto;
-  box-sizing: border-box;
-  box-sizing: content-box;
-  grid-row: 2/2;
+  width: fit-content;
   min-width: 25rem;
   max-width: 50rem;
+  margin-inline-end:8rem;
 }
 
 
@@ -103,8 +110,10 @@ main {
 }
 
 .agence_h2 {
-  font-size: 2.5rem;
   margin-left: 6rem;
+  font-size: 2.5rem;
+  font-family: 'Karla', sans-serif;
+  letter-spacing: 1.5px;
 }
 
 
@@ -194,6 +203,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-inline-end: 0rem;
   }
   .moon_txt  {
     display: flex;
@@ -207,6 +217,8 @@ main {
     justify-content: center;
     font-size: 2.5rem;
     margin-inline: 4rem;
+    letter-spacing: 0;
+    line-height: 2.5rem;
   }
 
   .moon_img {
@@ -248,6 +260,7 @@ main {
   
   .vamp_h2 {
     font-size: 2.3rem;
+    letter-spacing: 0;
 
   }
   .vamp_img {
@@ -286,6 +299,8 @@ main {
   justify-content: center;
   margin: 0rem;
   padding: 0rem;
+  letter-spacing: 0;
+  line-height: 2.5rem;
 }
 
 //Agence côté vampire
