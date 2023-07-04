@@ -1,6 +1,6 @@
 main {
   font-family: "raleway";
-  font-size: 1rem;
+  font-size: 1.15rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -69,7 +69,7 @@ main {
 .vamp_img {
   grid-row: 2/2;
   min-width: 15rem;
-  max-width: 50rem;
+  max-width: 500rem;
   width: fit-content;
 }
 
@@ -147,89 +147,105 @@ main {
   //section lune
   .monde_alternatif {
     background-color:$moonDark ;
-    display: grid;
-    grid-template-columns: 3fr 3fr;
-    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     gap:0rem;
   }
   .moon_txt  {
+    display: flex;
+    justify-content: center;
     max-width: fit-content;
-    margin: 2rem;
-    padding: 2rem;
-    grid-row: 2/2;
+    margin: 0;
+    padding-top: 1rem;
   }
   .moon_h1 {
-    grid-column: 1/1;
-    grid-row: 2/2;
-    margin-left: 1rem;
-    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+    margin: 0;
   }
 
   .moon_img {
+    display: flex;
+    justify-content: center;
     min-width: 15rem;
     max-width: 25rem;
-    grid-row: 1/1;
-    grid-column: 1;
-    width: fit-content;
-    margin: 4rem;
+    order: -1;
+    margin: 0;
   }
+  
+  
+  
+  
+  
+  
+  
+  
   //section VAmpire
   .vampires {
-    grid-row: 2/2;
-    display: grid;
-    grid-template-columns: 3fr 3fr;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     background-color:$vampireDark;
     column-gap: 5rem;
   }
   
   .vamp_txt {
-    grid-column: 1/1;
-    grid-row: 3/3;
+    display: flex;
     justify-content: center;
-    margin: 2rem;
-    padding: 2rem;
     max-width: fit-content;
+    margin: 0;
+    padding-top: 1rem;
   }
   .vamp_h2 {
-    grid-column: 1/1;
-    grid-row: 3/3;
-    margin: 2rem;
-    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    margin: 0rem;
+    padding: 0rem;
+    padding-top: 2rem;
   }
   
   .vamp_img {
-    grid-column: 1/1;
-    grid-row: 2/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     min-width: 15rem;
-    max-width: 20rem;
+    max-width: 100%;
     width: fit-content;
   }
+
+
+
+
+
+
 //section agence
 .agence {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .agence_txt {
-  margin-left: 6rem;
-  margin-right: 6rem;
-  padding-bottom: 0.4rem;
-  max-width: 25vw;
+  display: flex;
+  justify-content: center;
+  max-width: fit-content;
+  margin: 0;
+  padding-top: 1rem;
 }
 
 .agence_h2 {
-  margin-left: 6rem;
+  display: flex;
+  margin: 0rem;
+  padding: 0rem;
 }
 
 //Agence côté vampire
 .agence_vamp {
-  grid-column: 1/1;
-  grid-row: 3/3;
   display: flex;
   justify-items: center;
   flex-direction: column;
-  padding: 5rem;
-  padding-bottom: 8rem;
-  flex-shrink: 1;
   background-color: $redVamp;
 }
 
@@ -245,17 +261,14 @@ main {
 
 //Agence côté humain
 .agence_hum {
-  grid-column: 1/1;
-  grid-row: 4/4;
   display: flex;
   justify-items: center;
   flex-direction: column;
-  padding: 5rem;
-  padding-bottom: 8rem;
-  flex-shrink: 1;
   background-color: $moonDark;
 }
 .btn_vacances {
+  display: flex;
+  justify-content: center;
   border: 2px solid $red2;
   width: 15rem;
   padding: 0.625rem;
@@ -263,7 +276,6 @@ main {
   color:$red2;
   background-color:$moonDark;
   justify-content: center;
-  cursor: pointer;
 }
 
 }
