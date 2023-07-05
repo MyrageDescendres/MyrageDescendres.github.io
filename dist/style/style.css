@@ -167,10 +167,14 @@ footer a {
     justify-content: center;
     align-items: center;
   }
+  footer a {
+    color: #DAD8D8;
+    font-size: 1rem;
+  }
 }
 main {
   font-family: "Raleway", sans-serif;
-  font-size: 1.25rem;
+  font-size: 1.05rem;
   font-style: normal;
   font-weight: 500;
   line-height: 1.5rem;
@@ -216,7 +220,7 @@ main {
   justify-content: center;
   align-items: center;
   min-width: 15rem;
-  max-width: 25rem;
+  max-width: 30rem;
 }
 
 .vampires {
@@ -233,7 +237,7 @@ main {
 }
 
 .vamp_txt {
-  max-width: 40vw;
+  max-width: 30vw;
 }
 
 .vamp_h2 {
@@ -247,7 +251,6 @@ main {
   width: fit-content;
   min-width: 25rem;
   max-width: 50rem;
-  margin-inline-end: 8rem;
 }
 
 .agence {
@@ -321,7 +324,7 @@ main {
     display: flex;
     flex-direction: column;
     font-family: "raleway";
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     gap: 0;
   }
   .monde_alternatif {
@@ -342,6 +345,7 @@ main {
   .moon_txt {
     display: flex;
     justify-content: center;
+    font-size: 1.1rem;
     max-width: 70%;
     margin: 0;
     padding-top: 1rem;
@@ -359,6 +363,12 @@ main {
     max-width: 25rem;
     order: -1;
     margin: 0;
+  }
+  .moon_ancre {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 1rem;
   }
   .vampires {
     display: flex;
